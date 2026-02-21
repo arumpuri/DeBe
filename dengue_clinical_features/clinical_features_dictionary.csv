@@ -1,0 +1,18 @@
+Feature Name,Data Type,Description
+day_of_illness,int,Day of illness (1-10)
+fever_celsius,float,Body temperature in Celsius
+headache_severity,int,Headache severity (0-10 scale)
+myalgia_severity,int,Muscle pain severity (0-10 scale)
+retro_orbital_pain,int,Retro-orbital pain presence (0/1)
+rash_type,str,Type of rash (none/flushing/maculopapular/convalescent)
+nausea_vomiting,int,Nausea or vomiting presence (0/1)
+abdominal_pain,int,Severe abdominal pain (0/1)
+persistent_vomiting,int,Persistent vomiting >3 episodes (0/1)
+clinical_fluid_accumulation,int,Fluid accumulation (ascites/effusion) (0/1)
+mucosal_bleeding,int,Mucosal bleeding (0/1)
+lethargy,int,Lethargy or restlessness (0/1)
+liver_enlargement,int,Liver enlargement >2cm (0/1)
+hematocrit_increase,int,Rapid HCT increase with platelet drop (0/1)
+bleeding_manifestations,str,Types of bleeding (none/petechiae/epistaxis/etc)
+who_severity_classification,str,WHO severity (not_dengue/dengue_without/with/severe)
+hospitalization_status,str,Hospitalization status (outpatient/monitoring/hospitalized)
