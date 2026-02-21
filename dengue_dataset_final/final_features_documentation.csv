@@ -1,0 +1,10 @@
+Feature,Type,Description,Clinical_Reference
+NLR,float,Neutrophil-to-Lymphocyte Ratio (validated prognostic marker),Jayaratne et al. 2019 - NLR>2.5 predicts severe dengue
+Platelet_to_WBC_Ratio,float,Platelet-to-WBC ratio (captures dual cytopenias),Novel feature - amplifies thrombocytopenia+leukopenia signal
+HCT_Change_from_Baseline,float,HCT deviation from gender-specific baseline (%),WHO criteria - >20% HCT rise indicates plasma leakage
+Platelet_Severity_Score,int,"Platelet severity score 0-4 (0=normal, 4=critical)",WHO platelet thresholds
+Hemoconcentration_Score,int,Hemoconcentration severity score 0-3,WHO hemoconcentration criteria
+WHO_Risk_Score,int,Composite WHO-based risk score 0-15,Composite of WHO warning signs + lab severity
+is_synthetic,int,"Flag: 1=synthetic, 0=original",Quality tracking
+synthetic_type,str,Source: original/severe/pediatric,Provenance tracking
+validation_warning,str,Validation warnings if any,Data quality audit trail
