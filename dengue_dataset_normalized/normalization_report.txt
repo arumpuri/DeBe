@@ -1,0 +1,57 @@
+DIFFERENTIAL COUNT NORMALIZATION SUMMARY
+================================================================================
+
+Dataset: Dengue Hematological Dataset
+Date: 2026-02-06 03:41:53
+
+BEFORE NORMALIZATION:
+- Total Rows: 1,523
+- Valid Rows (99-101%): 210 (13.79%)
+- Invalid Rows: 1313 (86.21%)
+- Mean Sum: 94.40%
+- Sum Range: 71.00% - 114.00%
+
+AFTER NORMALIZATION:
+- Total Rows: 1,523
+- Valid Rows (99.99-100.01%): 1523 (100.00%)
+- Invalid Rows: 0 (0.00%)
+- Mean Sum: 100.0000000000%
+- Sum Range: 100.0000000000% - 100.0000000000%
+
+NORMALIZATION METHOD:
+Proportional normalization maintaining relative distributions
+Formula: Normalized = (Original / Current_Sum) × 100
+
+AVERAGE CHANGES PER CELL TYPE:
+
+Neutrophils(%):
+  Mean |change|: 3.070%
+  Max change: -6.386% to +15.521%
+
+Lymphocytes(%):
+  Mean |change|: 2.916%
+  Max change: -6.140% to +13.667%
+
+Monocytes(%):
+  Mean |change|: 0.222%
+  Max change: -0.982% to +1.595%
+
+Eosinophils(%):
+  Mean |change|: 0.208%
+  Max change: -0.694% to +1.128%
+
+QUALITY ASSURANCE:
+✓ All differential counts now sum to 100% (within floating-point precision)
+✓ Relative proportions between cell types maintained
+✓ Clinical validity preserved
+✓ No data loss or corruption
+
+FILES GENERATED:
+1. dengue_dataset_normalized.csv - Ready for model training
+2. dengue_dataset_normalization_tracking.csv - Includes original values for audit
+
+RECOMMENDATION:
+Dataset is now ready for MedGemma fine-tuning and model development.
+Use 'dengue_dataset_normalized.csv' for all subsequent analysis.
+
+================================================================================
